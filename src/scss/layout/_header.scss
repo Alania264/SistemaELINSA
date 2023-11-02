@@ -1,0 +1,58 @@
+.no-webp .inicio {
+    background-image:url(../img/portada.jpg) ;
+}
+.webp .inicio {
+    background-image: url(../img/portada.webp);
+}
+
+
+.header{
+    background-color: $grisOscuro;
+    padding: 1rem 0 3rem 0;
+
+    &.inicio{
+        background-position: center center;
+        background-size: cover;
+
+        @include tablet {
+            min-height: 70rem;
+        }
+
+        .contenido-header{
+            @include tablet{
+                min-height: 50rem;
+            }
+        }
+
+    }
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding:  calc($separacion /2) ;
+    /**justify-content:space-between ;**/
+    
+
+    h1{
+        text-align: center;
+        color: $blanco;
+        font-weight: $bold;
+        line-height: 1.5;
+        max-width: 25rem;
+        padding-top: 15rem;
+        padding-left: 40%;
+        
+    }
+    h3{
+       
+        padding-top: 1%;
+        color: $blanco;
+        line-height: 2;
+        max-width: 100rem;
+        padding: left 100px;
+        padding-left: 100rem;
+        margin-left: 12rem;
+    }
+}
